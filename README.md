@@ -4,3 +4,5 @@
 composer create-project --prefer-dist cakephp/app:~5.0 .
 ```
 # Enable .env file
+
+# Bundle Assets with Vite
