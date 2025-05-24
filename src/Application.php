@@ -49,6 +49,8 @@ class Application extends BaseApplication
         parent::bootstrap();
 
         $this->addPlugin(\CakeDC\Users\Plugin::class);
+        // load custom users.php config file
+        Configure::write('Users.config', ['users']);
 
         if (PHP_SAPI !== 'cli') {
             FactoryLocator::add(
