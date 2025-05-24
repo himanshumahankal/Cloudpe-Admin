@@ -48,6 +48,8 @@ class Application extends BaseApplication
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 
+        $this->addPlugin(\CakeDC\Users\Plugin::class);
+
         if (PHP_SAPI !== 'cli') {
             FactoryLocator::add(
                 'Table',
